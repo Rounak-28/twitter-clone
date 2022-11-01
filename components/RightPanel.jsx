@@ -13,7 +13,7 @@ const RightPanel = () => {
         <AiOutlineSearch className="absolute left-5 top-[15px] text-xl text-[#6f7479]" />
       </div>
       <div className="bg-[#16181c] mt-4 h-[450px] w-4/5 rounded-xl px-4 pb-4">
-        <p className="text-lg my-2">What's happening</p>
+        <p className="text-lg my-2">What&#39;s happening</p>
         <RightPanelTrendingCard />
         <RightPanelTrendingCard />
         <RightPanelTrendingCard />

@@ -56,7 +56,7 @@ const Login = (props) => {
           </div>
         </div>
         <p>
-          Don't have an account?{" "}
+          Don&#39;t have an account?{" "}
           <span className="text-blue-600" onClick={showSignup}>
             Sign up
           </span>

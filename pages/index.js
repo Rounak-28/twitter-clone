@@ -93,7 +93,7 @@ export default function Home() {
             inputRef={inputRef}
           />
           {tweetData.map((data) => {
-            return <TweetCard {...data} />;
+            return <TweetCard {...data} key={user.uid}/>;
           })}
         </div>
         <RightPanel />
