@@ -8,12 +8,21 @@ const TopCard = (props) => {
   return (
     <div className="h-44 border-b-[1px] border-b-[#888484cb]">
       <div className="top h-12 flex justify-between items-center text-xl font-semibold px-4">
-        <p className="cursor-pointer">Home</p>
-        <BsStars className="cursor-pointer"/>
+        <div className="flex space-x-4 items-center">
+          <div className="userImg rounded-full bg-slate-700 cursor-pointer md:hidden">
+            <div className=" text-white  w-11 h-11 text-xl flex justify-center items-center">
+              {props?.userName?.substring(0, 1)?.toUpperCase()}
+            </div>
+          </div>
+          <p className="cursor-pointer">Home</p>
+        </div>
+        <BsStars className="cursor-pointer" />
       </div>
       <div className="mid h-20 flex items-center px-4">
-        <div className="userImg rounded-full w-11 h-11 bg-slate-700 text-white text-xl flex justify-center items-center cursor-pointer">
-          {props?.userName?.substring(0, 1)?.toUpperCase()}
+        <div className="userImg rounded-full bg-slate-700 cursor-pointer hidden md:block">
+          <div className=" text-white  w-11 h-11 text-xl flex justify-center items-center">
+            {props?.userName?.substring(0, 1)?.toUpperCase()}
+          </div>
         </div>
         <input
           type="text"

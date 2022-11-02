@@ -29,26 +29,26 @@ const Login = (props) => {
 
   return (
     <div className="w-[100vw] h-[100vh] bg-[#242d34] flex justify-center items-center">
-      <div className="w-[600px] h-[505px] bg-black text-white rounded-2xl flex flex-col items-center justify-center relative">
+      <div className="w-[90%] max-w-[600px] h-[505px] bg-black text-white rounded-2xl flex flex-col items-center justify-center relative">
         <MdClose className="absolute top-4 left-4 text-xl" />
         <FaTwitter className="absolute top-3 text-3xl" />
-        <div className="inputs flex flex-col space-y-8">
+        <div className="inputs w-[90%] max-w-[445px] flex flex-col space-y-8">
           <p className="text-3xl text-center text-white">Login your account</p>
           <input
             type="text"
-            className="w-[445px] h-14 rounded-md bg-black border-[1px] border-[#ffffff48] focus:outline-none focus:border-2 focus:border-[#1d9bf0] indent-2"
+            className="h-14 rounded-md bg-black border-[1px] border-[#ffffff48] focus:outline-none focus:border-2 focus:border-[#1d9bf0] indent-2"
             placeholder="Email"
             ref={inputRefEmail}
           />
           <input
             type="text"
-            className="w-[445px] h-14 rounded-md bg-black border-[1px] border-[#ffffff48] focus:outline-none focus:border-2 focus:border-[#1d9bf0] indent-2"
+            className="h-14 rounded-md bg-black border-[1px] border-[#ffffff48] focus:outline-none focus:border-2 focus:border-[#1d9bf0] indent-2"
             placeholder="Password"
             ref={inputRefPass}
           />
-          <div className="btn h-24 flex items-end">
+          <div className="btn max-w-[445px] h-24 flex items-end justify-center">
             <button
-              className="h-14 w-[445px] bg-[#787a7a] rounded-full text-black font-bold"
+              className="h-14 w-full bg-[#787a7a] rounded-full text-black font-bold"
               onClick={handleLogin}
             >
               Log in
