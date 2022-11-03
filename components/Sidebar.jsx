@@ -9,8 +9,8 @@ import ToolTipComp from "./ToolTipComp";
 
 const Sidebar = (props) => {
   return (
-    <div className="h-[100vh] w-36 bg-black text-white border-r-[1px] border-r-[#888484cb] fixed hidden md:block">
-      <div className="icons-strip h-[100vh] absolute left-20 flex flex-col justify-evenly items-center">
+    <div className="h-[100vh] sm:w-20 md:w-36 bg-black text-white border-r-[1px] border-r-[#888484cb] fixed hidden sm:block">
+      <div className="icons-strip h-[100vh] absolute left-4 md:left-20 flex flex-col justify-evenly items-center">
         <FaTwitter className="text-3xl cursor-pointer" />
         <RiHome7Fill className="text-3xl cursor-pointer" />
         <RiHashtag className="text-3xl cursor-pointer" />

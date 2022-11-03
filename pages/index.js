@@ -85,7 +85,7 @@ export default function Home() {
     return (
       <div className="flex flex-col md:flex-row min-h-[100vh]">
         <Sidebar userName={userName} sign_out={sign_out} />
-        <div className="bg-black min-h-[100vh] md:ml-36 md:mr-96 w-full text-white">
+        <div className="bg-black min-h-[100vh] sm:ml-20 md:ml-36 lg:mr-96 md:w-full text-white">
           <TopCard
             userEmail={user.email}
             userName={userName}

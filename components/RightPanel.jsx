@@ -3,7 +3,7 @@ import RightPanelTrendingCard from "./RightPanelTrendingCard";
 
 const RightPanel = () => {
   return (
-    <div className="h-[100vh] w-96 bg-black text-white border-l-[1px] border-l-[#888484cb] fixed right-0 hidden md:block">
+    <div className="h-[100vh] w-96 bg-black text-white border-l-[1px] border-l-[#888484cb] fixed right-0 hidden lg:block">
       <div className="flex flex-col items-center">
         <div className="my-1 w-4/5 relative">
           <input
